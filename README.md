@@ -43,8 +43,8 @@ Herhangi bir hata veya log kaydını da anlık olarak konsol ekranında görebil
 ## Ekran Görüntüleri
 
 <div>
-  <img src="https://github.com/harundogdu/kloia/blob/master/src/assets/screenshots/1.png" width="470"/>
-  <img src="https://github.com/harundogdu/kloia/blob/master/src/assets/screenshots/2.png" width="470" />
+  <img src="https://github.com/harundogdu/kloia/blob/master/src/assets/screenshots/1.png" height="500"/>
+  <img src="https://github.com/harundogdu/kloia/blob/master/src/assets/screenshots/2.png" height="500" />
 </div>
 
 ## Canlı Örnek
