@@ -4,7 +4,7 @@ import Content from "../Content";
 import { Col, Container as ContainerMain, Row } from "react-bootstrap";
 function Container() {
   return (
-    <ContainerMain>
+    <ContainerMain className="mt-3">
       <Row>
         <Col md={4}>
           <Menu />
