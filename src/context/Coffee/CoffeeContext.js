@@ -10,6 +10,7 @@ export const CoffeeProvider = ({ children }) => {
 
   useEffect(() => {
     handleCategory(category);
+    setSearchText("");
   }, [category]);
 
   useEffect(() => {
