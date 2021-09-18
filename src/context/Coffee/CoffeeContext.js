@@ -6,8 +6,17 @@ export const CoffeeContext = createContext();
 export const CoffeeProvider = ({ children }) => {
   const [coffees, setCoffees] = useState(coffees_data);
   const [category, setCategory] = useState("all");
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
+    handleCategory(category);
+  }, [category]);
+
+  useEffect(() => {
+    handleChangeData(searchText);
+  }, [searchText]);
+
+  const handleCategory = (category) => {
     switch (category) {
       case "hot":
       case "iced":
@@ -19,13 +28,24 @@ export const CoffeeProvider = ({ children }) => {
         setCoffees(coffees_data);
         break;
     }
-  }, [category]);
+  };
+
+  const handleChangeData = (text) => {
+    const filteredData = coffees_data.filter((coffee) => {
+      const searchedText = `${text.toLowerCase()}`;
+      const searchingData = `${coffee.title.toLowerCase()} ${coffee.description.toLowerCase()}`;
+      return searchingData.indexOf(searchedText) > -1;
+    });
+    setCoffees(filteredData);
+  };
 
   const contextValues = {
     coffees,
     setCoffees,
     category,
     setCategory,
+    searchText,
+    setSearchText,
   };
   return (
     <CoffeeContext.Provider value={contextValues}>

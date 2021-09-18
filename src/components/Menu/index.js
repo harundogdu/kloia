@@ -12,7 +12,7 @@ function Menu() {
     <div>
       <FormInput />
       <Button
-        className="d-block"
+        className="d-block w-75"
         title="All Coffees"
         variant="dark"
         value="all"
@@ -21,7 +21,7 @@ function Menu() {
         All Coffees
       </Button>
       <Button
-        className="d-block my-3"
+        className="d-block w-50 my-3"
         title="Hot"
         variant="danger"
         value="hot"
@@ -30,7 +30,7 @@ function Menu() {
         Hot
       </Button>
       <Button
-        className="d-block"
+        className="d-block w-25"
         title="Iced"
         variant="info"
         value="iced"
@@ -42,4 +42,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default React.memo(Menu);

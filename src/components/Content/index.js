@@ -7,8 +7,8 @@ function Content() {
   };
   return (
     <div>
-      {coffees.map((coffee, index) => (
-        <div key={`coffee_id_${index}`} className="mb-5">
+      {coffees.map((coffee) => (
+        <div key={`coffee_id_${coffee.id.toString()}`} className="mb-5">
           <h3 className="bold-text">{coffee.title}</h3>
           <p className="bold-text">{coffee.description}</p>
           <span className="small">
