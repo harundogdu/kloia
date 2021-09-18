@@ -1,8 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Roboto&display=swap');
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/roboto-regular.woff2");
+}
+
+@font-face {
+    font-family: "Exo";
+    src: url("./assets/fonts/exo-bold.woff2");
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
 .bold-text {
     font-family: 'Exo', sans-serif;
+}
+
+.border {
+    border: 1px solid 'gray';
+    padding: 30px;
+}
+
+.border-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.border-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
