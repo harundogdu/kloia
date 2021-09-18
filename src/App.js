@@ -1,7 +1,8 @@
 import "./App.css";
+import { CoffeeProvider } from "./context/Coffee/CoffeeContext";
 
 function App() {
-  return <div className="App"></div>;
+  return <CoffeeProvider></CoffeeProvider>;
 }
 
 export default App;
